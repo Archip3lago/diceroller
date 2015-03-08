@@ -10,13 +10,16 @@
     <body>
        <div id="wrapper">
            <div class="dice one">
-               
+               <p class="firstDice"> </p>
            </div>
            <div class="dice two">
-               
+               <p class="secondDice"> </p>
            </div>
            <div class="dice three">
-               
+               <p class="thirdDice"> </p>
+           </div>
+           <div class="dice sum">
+               <p class="diceSum"> </p>
            </div>
         </div>
         <br>
