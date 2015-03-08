@@ -12,21 +12,21 @@ $(document).ready(function() {
                 var diceNumber = rollDice();
                 switch (i) {
                     case 0:
-                        $('.firstDice').replaceWith("<p class='firstDice'>" + diceNumber + "</p>");
+                        $('.firstDice').replaceWith("<img class='firstDice' src='img/"+diceNumber+".png'>");
 
-                        $('.secondDice').replaceWith("<p class='secondDice'> </p>");
+                        $('.secondDice').replaceWith("<img class='secondDice' src='img/diceEmpty.png'>");
 
-                        $('.thirdDice').replaceWith("<p class='thirdDice'> </p>");
+                        $('.thirdDice').replaceWith("<img class='thirdDice' src='img/diceEmpty.png'>");
                         var diceOne = diceNumber;
                         break;
                     case 1:
-                        $('.secondDice').replaceWith("<p class='secondDice'>" + diceNumber + "</p>");
+                        $('.secondDice').replaceWith("<img class='secondDice' src='img/"+diceNumber+".png'>");
 
-                        $('.thirdDice').replaceWith("<p class='thirdDice'> </p>");
+                        $('.thirdDice').replaceWith("<img class='thirdDice' src='img/diceEmpty.png'>");
                         var diceTwo = diceNumber;
                         break;
                     case 2:
-                        $('.thirdDice').replaceWith("<p class='thirdDice'>" + diceNumber + "</p>");
+                        $('.thirdDice').replaceWith("<img class='thirdDice' src='img/"+diceNumber+".png'>");
                         var diceThree = diceNumber;
                         break;
                 }
@@ -34,7 +34,7 @@ $(document).ready(function() {
             }
 
             sum = calcSum(number, diceOne, diceTwo, diceThree);
-            $('.diceSum').replaceWith("<p class='diceSum'>" + sum + "</p>");
+            $('.diceSum').replaceWith("<h1 class='diceSum'>" + sum + "</h1>");
         });
     }
 
@@ -63,6 +63,12 @@ $(document).ready(function() {
         }
         return sum;
     }
+//    function insertImage(diceNumber){
+//        switch(diceNumber){
+//            case 1:
+//                
+//        }
+//    }
 });
 
 
