@@ -67,6 +67,3 @@ $(document).ready(function() {
         return sum;
     }
 });
-
-
-
